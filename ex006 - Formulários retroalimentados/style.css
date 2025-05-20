@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Elementos da interface*/
+
+body{
+    background-color: #15142b;
+    background-image: linear-gradient(180deg, #372991, #15142b);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header, main, section, article{
+    max-width: 700px;
+}
+
+head > h1{
+    color: white;
+    text-decoration: 3px 3px 3px black;
+}
+
+main, section, article{
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.512);
+}
+
+footer{
+    display: flex;
+    width: 100vw;
+    background-color: #291f6c;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    padding: 5px;
+}
+
+p{
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+h2, h3, h4{
+    color: #372991;
+    margin: 0px 0px 10px 0px;
+}
+
+a{
+    color: #15142b;
+    border-bottom: 1px solid #372991;
+}
+
+/*         TABELAS E LISTAS         */
+
+table{
+    min-width: 400PX;
+    border-spacing: 0PX;
+    border: 0.5PX solid #372991;
+    margin: 10px auto;
+}
+
+table th{
+    background-color: #372991;
+    color: white;
+    padding: 5px;
+    text-align: left;
+}
+
+table td{
+    padding: 5px;
+}
+
+table tr:nth-child(odd){
+    background-color: rgba(55, 41, 145, 0.3);
+}
+
+table.divisao{
+    border: 1px solid white;
+}
+
+table.divisao td{
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+table.divisao tr:nth-child(1) td:nth-child(2){
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+}
+
+table.divisao tr:nth-child(2) td:nth-child(1){
+    border-left: 3px solid black;
+}
+
+table.divisao tr:nth-child(2) td:nth-child(1){
+    text-decoration: underline;
+}
+
+ul > li::marker{
+    color: #372991;
+}
+
+/*         ELEMENTOS DE FORMULÁRIO               */
+
+form{
+    background-color: rgba(55, 41, 145, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+form label{
+    display: block;
+    width: fit-content;
+    font-size: 0.8em;
+    font-weight: 100;
+    background-color: rgba(55, 41, 145, 0.2);
+    padding: 3px 7px;
+    margin-top: 10px;
+
+}

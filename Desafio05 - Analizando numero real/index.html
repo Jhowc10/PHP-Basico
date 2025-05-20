@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio PHP</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Analisador de Número Real</h1>
+
+        <!-- step serve para fazer ler numeros float/reais, se quiser com duas casas depois da , faz 0.01, três casas depois da , faz 0.001 -->
+        <form action="numero.php" method="post">
+            <label for="n">Número Real:</label>
+            <input type="number" name="n" id="n" step="0.001">
+            <input type="submit" value="Analizar">
+        </form>
+    </main>
+    
+</body>
+</html>
